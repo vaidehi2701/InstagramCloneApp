@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Login information" >
+        <EditTextPreference
+            android:key="username"
+            android:summary="Please enter your login username"
+            android:title="Username" />
+        <EditTextPreference
+            android:key="password"
+            android:summary="Enter your password"
+            android:title="Password" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Settings" >
+        <CheckBoxPreference
+            android:key="checkBox"
+            android:summary="On/Off"
+            android:color="@color/colorBlack"
+            android:title="Keep me logged in" />
+
+        <ListPreference
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValues"
+            android:key="listpref"
+            android:summary="List preference Language"
+            android:title="Language" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="About" >
+        <Preference
+            android:title="Blogs"
+            >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://business.instagram.com/blog?"
+                />
+        </Preference>
+
+        <Preference
+            android:title="Privacy Policy"
+            >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://help.instagram.com/155833707900388"
+                />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/like_page"
+    tools:context=".Activity.LikePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/llSymbol"
+        android:weightSum="120">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/llGaming"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ivGaming"
+            android:src="@drawable/ic_game"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gaming"
+            android:id="@+id/tvGaming"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/ivGaming"
+           />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/llScience"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivStyle"
+                android:src="@drawable/ic_science"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:textSize="15dp"
+                android:id="@+id/tvScience"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/ivStyle"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:id="@+id/llFood"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivFood"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_food" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textSize="15dp"
+                android:id="@+id/tvFood"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/ivFood"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:layout_below="@id/llSymbol"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>

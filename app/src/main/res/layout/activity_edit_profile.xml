@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context=".Activity.EditProfile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivProfile"
+        android:src="@drawable/ic_profile_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChange"
+        android:layout_below="@+id/ivProfile"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Change Profile Photo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llName"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:weightSum="100"
+        android:layout_below="@+id/tvChange">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name "
+            android:textSize="16dp"
+            android:layout_weight="30"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:hint="Grant Gustin"
+            android:imeOptions="actionDone"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llUserName"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:weightSum="100"
+        android:layout_below="@+id/llName">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="UserName "
+            android:textSize="16dp"
+            android:layout_weight="30"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"/>
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:hint="Grant Gustin"
+            android:imeOptions="actionDone"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/llBio"
+        android:weightSum="100"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/llUserName">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:layout_weight="30"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"/>
+
+
+        <EditText
+            android:id="@+id/etBio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Fastest Man"
+            android:layout_weight="70"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llBio"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/llWebsite"
+        android:weightSum="100"
+        android:layout_marginLeft="5dp"
+       >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Website"
+            android:layout_weight="30"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"/>
+
+
+        <EditText
+            android:id="@+id/etwebsite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="https://www.instagram.com"
+            android:layout_weight="70"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_below="@id/llWebsite"
+        android:layout_width="match_parent"
+        android:background="@color/colorGrey"
+        android:id="@+id/viewHr"
+        android:layout_margin="10dp"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewHr"
+        android:id="@+id/tvBusiness"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Business Information"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rlPgae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Page"
+                android:textSize="18sp"
+                 />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/ic_next" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tvVendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Category"
+                android:textSize="18sp"
+                 />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/ic_next" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tvContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Contact Option"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/ic_next" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

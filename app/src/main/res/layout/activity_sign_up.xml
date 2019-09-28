@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung"
+    tools:context=".Activity.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/logo"
+            android:id="@+id/ivLogo"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+
+            android:layout_below="@+id/ivLogo"
+            android:text="UserName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/llUserName"
+            android:layout_below="@+id/tvUserName"
+            android:background="#ffff">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#e34387" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mr.Bajaj"
+                android:textColorHint="#97918f"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/rounded_corner"
+                android:imeOptions="actionDone"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/llUserName"
+            android:text="Email" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/llEmail"
+            android:layout_below="@+id/tvEmail"
+            android:background="#ffff">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#e34387" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="abc@gmail.com"
+            android:textColorHint="#97918f"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/rounded_corner"
+            android:imeOptions="actionDone"
+            android:padding="12dp"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvTitleDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/llEmail"
+            android:text="Date Of Birth" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/llDOB"
+            android:layout_below="@+id/tvTitleDOB"
+            android:background="#ffff">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#e34387" />
+
+            <TextView
+                android:id="@+id/tvDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="24-5-17"
+                android:textColorHint="#97918f"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/rounded_corner"
+                android:imeOptions="actionDone"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/llDOB"
+            android:text="Password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/llPassword"
+            android:layout_below="@+id/tvPassword"
+            android:background="#ffff">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#e34387" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="*****"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/rounded_corner"
+                android:imeOptions="actionDone"
+                android:textColorHint="#97918f"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignUp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="SignUp"
+            android:textColorHint="#97918f"
+            android:layout_below="@+id/llPassword"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

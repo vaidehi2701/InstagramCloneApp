@@ -1,3 +1,3 @@
 # InstagramCloneApp
 
-<img src="https://user-images.githubusercontent.com/55477266/65748880-86e80100-e122-11e9-8e79-f5d11f8e8813.jpg" width="950" height="550">
+<img src="https://user-images.githubusercontent.com/55477266/65816374-305cee80-e218-11e9-9939-19d09e16e0e1.png" width="950" height="550">
